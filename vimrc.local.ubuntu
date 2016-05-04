@@ -8,3 +8,4 @@ colorscheme molokai
 set wrap
 set fileencodings=ucs-bom,utf-8,cp98030,big5,euc-jp,euc-kr,latin1
 set nofoldenable
+let g:DisableAutoPHPFolding = 1
