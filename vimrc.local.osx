@@ -13,3 +13,8 @@ set guifont=Monaco:h15
 set lines=43
 set columns=120
 let g:tex_conceal = ""
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+au BufNewFile,BufRead *.scala set tabstop=2
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
